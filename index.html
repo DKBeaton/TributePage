@@ -1,85 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Tribute Page</title>
-  </head>
-  <body>
-    <main id="main">
-      <section id="tribute-Section">
-        <div class="container">
-          <div id="img-div">
-            <figure>
-              <img
-                src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fallieearly%2Ffiles%2F2018%2F08%2FJason-Edmiston-The-Storyteller.jpg"
-                id="image"
-                alt="Image of Hayao Miyazaki"
-              />
-              <figcaption id="img-caption">Drawn photo of Hayao Miyazaki, by Jason Edmiston</figcaption>
-            </figure>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Tribute Page</title>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/016d819f40.js"
+          crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="styles/style.css" />
+</head>
+
+<body>
+  <main id="main">
+    <section id="tribute-Section">
+      <div class="container">
+        <div id="image-container">
+          <figure>
+            <img src="/images/avatar.jpg"
+                 id="image"
+                 alt="Image of Hayao Miyazaki" />
+            <figcaption id="img-caption">Drawn photo of Hayao Miyazaki, by Jason Edmiston</figcaption>
+          </figure>
+        </div>
+        <div id="tribute-info">
+          <h1 id="title">Hayao Miyazaki</h1>
+          <h2 class="subtitle">Japanese animator, filmmaker, screenwriter, author, and manga artist.</h2>
+          <p>
+            A co-founder of Studio Ghibli, a film and animation studio, he has attained international acclaim as a
+            masterful storyteller and as a maker of animated feature films, and is widely regarded as one of the most
+            accomplished filmmakers in the history of animation.
+          </p>
+          <blockquote>
+            <b class="large">&ldquo;</b>Always believe in yourself. Do this and no matter where you are, you will have
+            nothing to
+            fear.<b class="large">&rdquo;</b><br />
+            <cite>— Hayao Miyazaki</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- End of tribute section -->
+
+    <section id="works-Section">
+      <h2>Favorite Works</h2>
+      <div id="cards-Container">
+        <div class="card"
+             id="card-princess">
+          <div id="img-princess"></div>
+          <div id="princess-content">
+            <h3>Princess Mononoke</h3>
+            <p>1997 ‧ Animation/Fantasy ‧ 2h 14m</p>
+            <div class="princess-content-summary">
+              <h4>SUMMARY</h4>
+              <div class="summary-rating">
+                <i class="fas fa-star"></i>
+                <span>8.4/10 IMDb</span>
+              </div>
+            </div>
+            <p>In the 14th century, the harmony that humans, animals and gods have enjoyed begins to crumble.</p>
+            <div class="princess-content-links">
+              <a href="https://en.wikipedia.org/wiki/Princess_Mononoke"
+                 target="_blank"
+                 id="princess-btn">Read More</a>
+              <i class="far fa-bookmark"></i>
+            </div>
           </div>
-          <div id="tribute-info">
-            <h1 id="title">Hayao Miyazaki</h1>
-            <h2>Animator, filmmaker, screenwriter, author, and mangaka.</h2>
-            <hr />
+        </div>
+
+        <div class="card"
+             id="card-howl">
+          <div class="bg-howl">
+            <p>10-year-old Chihiro and her parents stumble upon a seemingly abandoned amusement park.</p>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_(film)"
+             target="_blank"
+             id="howl-btn">Read More</a>
+        </div>
+
+        <div class="card"
+             id="card-spirited">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+               id="img-spirited" />
+          <div class="bg-spirited">
             <p>
-              Hayao Miyazaki (<span lang="ja">宮崎 駿</span>) is a co-founder of Studio Ghibli, a film and animation
-              studio, he has attained international acclaim as a masterful storyteller and as a maker of animated
-              feature films, and is widely regarded as one of the most accomplished filmmakers in the history of
-              animation.
+              Sophie has an uneventful life at her late father's hat shop, but all that changes when she befriends
+              wizard Howl, who lives in a magical flying castle.
             </p>
-            <blockquote>
-              &ldquo;Always believe in yourself. Do this and no matter where you are, you will have nothing to
-              fear.&rdquo;<br />
-              <cite>— Hayao Miyazaki</cite>
-            </blockquote>
           </div>
+          <a href="https://en.wikipedia.org/wiki/Spirited_Away"
+             target="_blank"
+             id="spirited-btn">Read More</a>
         </div>
-      </section>
-      <section id="works-Section">
-        <h2>Favorite Works</h2>
-        <div id="cards-Container">
-          <div class="card" id="card-princess">
-            <div id="img-princess"></div>
-            <div id="princess-content">
-              <h3>Princess Mononoke</h3>
-              <p>In the 14th century, the harmony that humans, animals and gods have enjoyed begins to crumble.</p>
-              <a href="https://en.wikipedia.org/wiki/Princess_Mononoke" target="_blank" id="princess-btn">Read More</a>
-            </div>
-          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <small>&copy; Copyright @dkbcode tribute project for <i>Free Code Camp</i></small>
+        <a id="tribute-link"
+           href="https://en.wikipedia.org/wiki/Hayao_Miyazaki"
+           target="_blank">Wikipedia</a>
+      </div>
+    </footer>
+  </main>
+</body>
 
-          <div class="card" id="card-howl">
-            <div class="bg-howl">
-              <p>10-year-old Chihiro and her parents stumble upon a seemingly abandoned amusement park.</p>
-            </div>
-            <a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_(film)" target="_blank" id="howl-btn"
-              >Read More</a
-            >
-          </div>
-
-          <div class="card" id="card-spirited">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-              id="img-spirited"
-            />
-            <div class="bg-spirited">
-              <p>
-                Sophie has an uneventful life at her late father's hat shop, but all that changes when she befriends
-                wizard Howl, who lives in a magical flying castle.
-              </p>
-            </div>
-            <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank" id="spirited-btn">Read More</a>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div id="footer">
-          <small>&copy; Copyright 2020 dkbcode (github: DKBeaton) tribute project for <i>Free Code Camp</i></small>
-          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Hayao_Miyazaki" target="_blank">Wikipedia</a>
-        </div>
-      </footer>
-    </main>
-  </body>
 </html>
