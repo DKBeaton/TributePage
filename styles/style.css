@@ -142,7 +142,7 @@ cite::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #e7e7e7;
+  color: #E7E7E7;
 }
 
 .card {
@@ -150,75 +150,86 @@ cite::before {
   height: 450px;
   border-radius: 10px;
   margin: 5px;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
 }
 
 /* Princess Mononoke Card */
 
 #card-princess {
-  background-color: #392e28;
-}
-
-#img-princess {
-  background-image: url('https://m.media-amazon.com/images/M/MV5BNzcxODMxMjY4NF5BMl5BanBnXkFtZTgwMzUzMjkxMzE@._V1_SY1000_CR0,0,770,1000_AL_.jpg');
+  background-image: url(/images/bg-princess.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 35%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 65%,
-    rgba(0, 0, 0, 0.8) 85%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 35%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 65%,
-    rgba(0, 0, 0, 0.8) 85%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background-position: center;
+  background-position-y: 0px;
+  transition: 0.5s;
+}
+
+#card-princess:hover {
+  background-position-y: -10px;
 }
 
 #princess-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  transform: translateY(310px);
+  transition: 0.5s;
+  background: linear-gradient(rgba(0, 0, 0, 0.0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
 }
 
-#princess-content h3 {
+#princess-content:hover {
+  transform: translateY(100px);
+}
+
+.content-header {
+  margin-top: 50px;
+}
+
+.content-header h3 {
   font-size: 1rem;
-  padding: 0 15px;
   margin-top: 10px;
+  padding: 0 15px;
 }
 
-#princess-content h4 {
+#princess-content .content-header p {
+  color: #f3d4c0;
+}
+
+.content-summary h4 {
   font-size: 0.8rem;
-  padding-top: 10px;
+  font-weight: 600;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+
+.content-rating {
+  font-size: 0.8rem;
+  padding: 0 15px;
+}
+
+.content-rating .rating {
   font-weight: 600;
 }
 
 #princess-content p {
-  color: #9b9b9b;
   font-size: 0.8rem;
   padding: 2px 15px;
-}
-
-.princess-content-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 15px;
 }
 
 i.fas.fa-star {
   color: #fff700;
   font-size: 0.8rem;
+}
+
+i.far.fa-bookmark {
+  font-weight: 600;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+
+i.far.fa-bookmark:hover {
+  opacity: 1;
 }
 
 .princess-content-summary span {
@@ -247,18 +258,8 @@ i.fas.fa-star {
 }
 
 #princess-btn:hover {
-  color: #392e28;
-  background-color: #fff;
-  border: 1px solid rgba(165, 165, 165, 1);
-}
-
-i.far.fa-bookmark {
-  color: #e7e7e7;
-  opacity: 0.5;
-}
-
-i.far.fa-bookmark:hover {
-  opacity: 1;
+  color: var(--main-black);
+  background-color: #f3d4c0;
 }
 
 /* Howl's Moving Castle Card */
