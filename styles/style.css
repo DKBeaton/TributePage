@@ -265,7 +265,7 @@ i.far.fa-bookmark:hover {
 /* Howl's Moving Castle Card */
 
 #card-howl {
-  background-image: url('https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg');
+  background-image: url(/images/bg-howls.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

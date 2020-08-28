@@ -7,6 +7,7 @@ Repository of a tribute page for FreeCodeCamp project.
 - I plan to come back to this to improve it as I learn.
 - Live version: https://codepen.io/DKBeaton/full/KKdBmeW
 
-- [x] Updated style
-- [x] Updated html / css structure
-- [x] Responsive
+- [ ] Change card style
+- [x] Update general style
+- [x] Update html / css structure
+- [x] Responsive style
