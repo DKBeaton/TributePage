@@ -98,7 +98,8 @@ h2.subtitle {
   width: 90%;
   background-color: #fff;
   padding: 5px 5px;
-  border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 40px;
+  border-right: 1px solid var(--main-blue);
 }
 
 .large {
