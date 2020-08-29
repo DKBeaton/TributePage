@@ -70,7 +70,7 @@ html {
 
 figcaption {
   font-size: 10px;
-  color: grey;
+  color: var(--main-black);
   position: absolute;
   top: 584px;
   left: 50px;
@@ -203,7 +203,7 @@ i.far.fa-bookmark:hover {
 /* Princess Mononoke Card */
 
 #card-princess {
-  background-image: url(/images/bg-princess.jpg);
+  background-image: url(/images/bg-princess-optimized.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,7 +265,7 @@ i.far.fa-bookmark:hover {
 /* Howl's Moving Castle Card */
 
 #card-howl {
-  background-image: url(/images/bg-howls.jpg);
+  background-image: url(/images/bg-howls-optimized.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
