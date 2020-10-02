@@ -9,10 +9,10 @@
   --main-font: 'Poppins', sans-serif;
   --main-black: #212738;
   --main-blue: #0080bd;
-  --light-blue: #3BB1FF;
+  --light-blue: #3bb1ff;
   --dark-blue: #274992;
   --bg-off-white: #f7f9fb;
-  --text-off-white: #E7E7E7;
+  --text-off-white: #e7e7e7;
   --princess-color: #f3d4c0;
   --star-color: #fff700;
   --red-color: #b81614;
@@ -50,7 +50,7 @@ html {
   max-width: 100%;
   height: 576px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  background-color: var( --bg-off-white);
+  background-color: var(--bg-off-white);
   padding-left: calc(459px + 10px);
 }
 
@@ -222,10 +222,10 @@ i.far.fa-bookmark:hover {
   height: 100%;
   transform: translateY(310px);
   transition: 0.5s;
-  background: linear-gradient(rgba(0, 0, 0, 0.0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
 }
 
-#princess-content:hover {
+#card-princess:hover  #princess-content{
   transform: translateY(100px);
 }
 
@@ -284,10 +284,10 @@ i.far.fa-bookmark:hover {
   height: 100%;
   transform: translateY(310px);
   transition: 0.5s;
-  background: linear-gradient(rgba(0, 0, 0, 0.0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
 }
 
-#howl-content:hover {
+#card-howl:hover  #howl-content{
   transform: translateY(80px);
 }
 
@@ -322,7 +322,7 @@ i.far.fa-bookmark:hover {
 }
 
 #howl-btn:hover {
-  background-color:var(--dark-blue);
+  background-color: var(--dark-blue);
   color: var(--text-off-white);
 }
 
@@ -347,10 +347,10 @@ i.far.fa-bookmark:hover {
   height: 100%;
   transform: translateY(310px);
   transition: 0.5s;
-  background: linear-gradient(rgba(0, 0, 0, 0.0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 1) 90%);
 }
 
-#spirited-content:hover {
+#card-spirited:hover #spirited-content{
   transform: translateY(120px);
 }
 
@@ -459,7 +459,7 @@ a#tribute-link:hover {
   }
 
   #image-container #image {
-    max-width: 350px; 
+    max-width: 350px;
     width: 100%;
     border-top-left-radius: 150px;
     border-bottom-right-radius: 150px;
@@ -508,10 +508,9 @@ a#tribute-link:hover {
   }
 
   #image-container #image {
-    max-width: initial; 
+    max-width: initial;
     width: 100%;
   }
-
 
   #image-container {
     position: relative;
